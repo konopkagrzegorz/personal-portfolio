@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  min-width: 430px !important;
+}
+:root {
+  --blue-header: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #1abc9c;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #1abc9c;
+  --secondary: #2c3e50;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--secondary);
+}
+
+.nav-link {
+  display: flex;
+  margin-right: 20px;
+}
+
+.nav-link > li {
+  display: inline-block;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.nav-link a {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  padding: 20px;
+  color: var(--light);
+  opacity: 0.4;
+}
+
+.nav-link a:hover {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+.welcome-section {
+  margin-top: 59px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  width: 100%;
+  height: 50vh;
+  color: var(--light);
+}
+
+#profile-image {
+  max-height: 400px;
+  max-width: 400px;
+  display: block;
+  margin: auto;
+  flex-basis: 40%;
+  margin-left: 75px;
+  justify-items: center;
+}
+
+#profile-description {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 80%;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+#profile-description > h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#profile-image > img {
+  padding: 20px;
+  width: 80%;
+  max-height: 60%;
+}
+
+.highlight:hover {
+  color: #dc3545;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+  width: 80%;
+  margin: auto;
+  height: 200px;
+}
+
+.about-section > h2 {
+  min-width: 200px;
+  margin-right: 50px;
+  text-align: center;
+  font-size: 2.4rem;
+  flex-basis: 20%;
+}
+
+.about-section > p {
+  margin: auto;
+  text-align: justify;
+  flex-basis: 80%;
+}
+
+.contact-section {
+  background-color: var(--gray);
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 20vh;
+  border-bottom: solid 8px;
+}
+
+footer {
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.2rem;
+  height: 60px;
+}
+
+footer > p {
+  color: var(--light);
+  text-shadow: 1px 1px 1px #1f1f1f;
+  margin: auto;
+}
+
+.contact-section-header {
+  font-size: 1.2em;
+}
+
+.contact-section-header > p {
+  font-size: 1.4rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+.contact-details:hover {
+  transform: translateY(5px);
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary);
+    width: 100%;
+    height: 70vh;
+    color: var(--light);
+  }
+
+  #profile-image {
+    height: 400px;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    flex-basis: auto;
+  }
+
+  #profile-image > img {
+    padding: 20px;
+    width: 80%;
+    max-height: none;
+    align-self: center;
+    margin: 20px;
+  }
+
+  #profile-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+  }
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    width: 80%;
+    margin: auto;
+    height: 250px;
+  }
+
+  .about-section > h2 {
+    text-align: center;
+    font-size: 2.5em;
+    flex-basis: auto;
+    margin: auto;
+  }
+
+  .about-section > p {
+    margin: auto;
+    text-align: justify;
+    flex-basis: auto;
+  }
+}
