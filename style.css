@@ -88,7 +88,7 @@ a {
 #profile-image {
   max-height: 400px;
   max-width: 400px;
-  min-width: 300px;
+  min-width: 350px;
   display: block;
   margin: auto;
   flex-basis: 40%;
@@ -263,19 +263,18 @@ footer > p {
   #profile-image {
     height: 400px;
     max-width: 400px;
-    display: block;
+    display: flex;
     margin: auto;
     justify-items: center;
-    justify-content: center;
     flex-basis: auto;
   }
 
   #profile-image > img {
     padding: 20px;
-    width: 80%;
-    max-height: none;
-    align-self: center;
-    margin: 20px;
+    max-height: 400px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
   }
 
   #profile-description {
